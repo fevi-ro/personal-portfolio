@@ -67,7 +67,7 @@ if (result.code === 200) {
     <Col sm={6} className="px-1">
     <input type="tel" value={formDetails.telephone} placeholder="Telephone" onChange={(e)=> onFormUpdate('telephone', e.target.value)} />
     </Col>
-    <Col>
+    <Col className="message">
     <textarea row={6} value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate('message', e.target.value)}/>
     <button type="submit"><span>{buttonText}</span></button>
     </Col>

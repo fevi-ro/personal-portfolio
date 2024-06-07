@@ -5,7 +5,8 @@ import TrackVisibility from "react-on-screen";
 import { useEffect, useState } from "react"
 import { Nav, Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.png"
+import headerImg from "../assets/img/plant1.png"
+
 
 
 export const Banner = () => {
