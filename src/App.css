@@ -34,9 +34,9 @@ body {
  font-weight: 400;
  overflow-x: hidden;
  position: relative;
- background-color: #c7f3d3 !important;
-color: #fff !important;
- text-shadow: 0 0 3px rgb(0, 0, 0);
+ background-color: #cad9b7 !important;
+color: #ffffff !important;
+ text-shadow: 1px 1px 2px  rgb(0, 0, 0);
 
 
  font-family: 'Centra', sans-serif !important;
@@ -70,7 +70,10 @@ nav.navbar {
 }
 nav.navbar.scrolled  {
   padding: 0px 0;
-  background-image: url('./assets/img/banner-bg2.png');
+  /**background-image: url('./assets/img/banner-bg2.png');**/
+  background: linear-gradient(90deg, #ff9a9e 0%, #ffa0a3 50%, #c7f3d3 100%);
+
+
  
 }
 
@@ -242,7 +245,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: -30px;
   padding: 0px 0 100px 0;
-  background-color: #c7f3d3;
+  background-color: #cad9b7;
+ /** background: linear-gradient(90deg, rgba(217,255,154,1) 1%, rgba(199,243,211,1) 69%, rgba(140,255,215,1) 88%); **/
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -287,8 +291,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgb(255 0 154 / 50%) -5.91%, rgb(251 255 0 / 50%) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+color: #7c0055;
+text-shadow: none;
+
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -300,6 +305,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #ffffff !important;
+ text-shadow: 3px 3px 1px  rgb(255, 0, 72);
+ 
 }
 .banner p {
   color: #4e4e4e;
@@ -341,17 +349,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .skill-bx {
   
-  background-image: url('./assets/img/banner-bg2.png');
+  /** background-image: url('./assets/img/banner-bg3.png');  **/
+  position: relative;
+  background-color: #bec9af;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
+  margin-bottom: -20rem;
+  z-index: 1;
+  border: none;
 
 }
 
 .skill h2 {
   font-size: 45px;
   font-weight: 700;
+ 
 }
 
 .skill p {
@@ -363,7 +377,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-shadow: none;
 }
 
-
 .skill-slider {
   width: 80%;
   margin: 0 auto;
@@ -371,23 +384,33 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .skill-slider .item img {
-width: 50%;
-margin: 0 auto 15px auto;
-background-size: 20px 30px;
-}
-.item {
-  flex-direction: row;
-  display: flex;
-}
+  width: 90%;
+  margin: 0 auto 15px auto;
+  background-size: 20px 30px;
+  }
+  
+  .item {
+    flex-direction: row;
+    display: flex;
+  }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
+  .skills-container {
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+  }
+  .skills-group h4 {
+  padding-top: 2rem;
+   padding-bottom: 2rem;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
 
 .flex-items:nth-child(1) {
   display: block;
@@ -398,25 +421,49 @@ background-size: 20px 30px;
   order: 0;
 
 }
+
 .flex-items img {
-  width: 70%;
+  width: 30%;
   margin: 0 auto 15px auto;
   background-size: 20px 30px;
 
   }
-
 .flex-items.js img {
-  width: 50%;
+  width: 30%;
   margin: 0 auto 15px auto;
   background-size: 20px 30px;
 
   }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem 0 2rem;
+  }
+  
+  .flex-items {
+    margin: 10px;
+    text-align: center;
+    flex: 1 1 20%; /* Allow items to flexibly shrink and grow */
+    max-width: 150px; /* Ensures items don't get too large */
+    min-width: 100px; /* Ensures items have a minimum size */
+  }
+
+  .col-12 ul {
+    padding-bottom: 3rem;
+  }
+
+
+
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 23rem 0;
   position: relative;
-  background-color: #c7f3d3;
+  background-color: #cad9b7;
+  /** background: linear-gradient(90deg, rgba(217,255,154,1) 1%, rgba(199,243,211,1) 69%, rgba(140,255,215,1) 88%); **/
 }
 .project h2 {
 	font-size: 45px;
@@ -449,7 +496,6 @@ background-size: 20px 30px;
   padding: 17px 0;
   color: #090909;
   width: 100%;
-  font-size: 17px;
   letter-spacing: 0.8px;
   font-weight: 600;
   position: relative;
@@ -492,15 +538,17 @@ text-shadow: none;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  z-index: 1; /* Ensure that the image box is on top */
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #efff60 -5.91%, #a4ffaf 111.58%);
+  background: linear-gradient(90.21deg, #fffccc -5.91%, #b560ff 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+  z-index: 0; /* Keep the before element behind everything */
 }
 .proj-imgbx:hover::before {
   height: 100%;
@@ -514,8 +562,10 @@ text-shadow: none;
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  color: rgb(46, 46, 46);
+  color: rgb(86, 86, 86);
   text-shadow: none;
+  z-index: 2; /* Ensure the text is above the hover effect */
+ 
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -526,12 +576,13 @@ text-shadow: none;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
-  color: gray;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px  rgb(184, 7, 7);
 }
 .proj-txtx span {
   font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
   letter-spacing: 0.8px;
 }
 .background-image-right {
@@ -543,13 +594,39 @@ text-shadow: none;
   z-index: -4;
 }
 
+/* Ensure the a tag remains clickable */
+a {
+  position: relative;
+  z-index: 3; /* Ensure the link stays on top of everything */
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(43deg, #ffffff -5.91%, #caff00 111.58%);
-  padding: 60px 0 50px 0;
+ margin-top: -18rem;
+  z-index: 1;
+  position: relative;
+display: flex;
+justify-content: center;
+margin-bottom: 4rem;
+}
+
+.contactBx {
+  /** background: linear-gradient(90.21deg, rgb(255 0 154 / 50%) -5.91%, rgb(251 255 0 / 50%) 111.58%); **/
+  background-color: #c7f3d3;
+  border-radius: 64px;
+    text-align: center;
+    border-top: 3px solid rgb(183, 155, 255);
+    border-bottom: 3px solid white;
+    justify-content: center;
+    padding: 2rem;
+
 }
 .contact img {
-  width: 92%;
+  width: 82%;
 }
 .contact h2 {
 	font-size: 45px;
@@ -557,6 +634,7 @@ text-shadow: none;
   margin-bottom: 30px;
   color: #fff !important;
   text-shadow: 0 0 3px rgb(0, 0, 0);
+  margin-top: 3rem;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -570,7 +648,10 @@ text-shadow: none;
   font-size: 18px;
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
+
 }
+
+
 .contact form input:focus, .contact form textarea:focus {
   background: rgb(255, 255, 255);
   color: #121212;
@@ -610,7 +691,6 @@ text-shadow: none;
   background-color: #fff;
   left: 0;
   top: 0;
-
   transition: 0.3s ease-in-out;
 }
 .contact form button:hover::before {
@@ -626,11 +706,12 @@ text-shadow: none;
 }
 
 
+
 /************ Footer Css ************/
 
 .footer {
-  padding: 0 0 5% 0;
-  background-image: url('./assets/img/banner-bg2.png');
+  padding: 2rem 0 5% 0;
+  background: linear-gradient(90deg, #a8acdb  0%, #ffa0a3 50%,#ff9396 100%);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -646,9 +727,11 @@ text-shadow: none;
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #B8B8B8;
+  color: #4f4f4f;
+  text-shadow: none;
   letter-spacing: 0.5px;
   margin-top: 20px;
+  font-weight: 600;
 }
 .App {
   text-align: center;

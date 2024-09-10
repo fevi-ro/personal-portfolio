@@ -47,11 +47,9 @@ if (result.code === 200) {
     return (
 <section>
     <Container className="contact" id="contact">
-        <Row className="aling-items-center">
-            <Col md={6}>
-                <img src={contactImg} alt="Contact Us" />
-            </Col>
-            <Col md={6}>
+       
+        
+            <Col sm={4} className="contactBx">
                 <h2>Get in Touch</h2>
                 <form onSubmit={handleSubmit}>
 <Row>
@@ -82,7 +80,7 @@ if (result.code === 200) {
 
                 </form>
             </Col>
-        </Row>
+        
     </Container>
 </section>
     )

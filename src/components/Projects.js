@@ -11,34 +11,38 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Foster4Paws",
+      description: "A Pet foster web-app",
       imgUrl: projImg1,
+      url: "https://github.com/fevi-ro/Pet-foster-app?tab=readme-ov-file",
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Video Game tracker",
+      description: "A web-app for gamers",
+      imgUrl: projImg2,
+      url: "https://videogame-tracker.netlify.app/",
+    },
+    {
+      title: "Colorama",
+      description: "A colourful game based on the Stroop effect",
+      imgUrl: projImg3,
+      url: "https://fevi-ro.github.io/Colorama-game/",
+    },
+    {
+      title: "Evil Christmas Presents",
+      description: "A classic point and shoot game",
+      imgUrl: projImg1,
+      url: "https://evil-christmas-presents.netlify.app",
+    },
+    {
+      title: "More coming soon",
+      description: " ",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "More coming soon",
+      description: " ",
       imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
     },
   ];
 
@@ -53,8 +57,9 @@ export const Projects = () => {
                 <h2>Projects</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                   {/* 
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
+               <Nav.Item>
                       <Nav.Link eventKey="first">Tab 1</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -64,6 +69,7 @@ export const Projects = () => {
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
+                  */}
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                     <Tab.Pane eventKey="first">
                       <Row>
