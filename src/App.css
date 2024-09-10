@@ -241,6 +241,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+.navbar img.logo {
+  padding: 10px;
+
+  max-width: 4rem;
+}
+
+
 /************ Banner Css ************/
 .banner {
   margin-top: -30px;
@@ -446,9 +453,9 @@ text-shadow: none;
   .flex-items {
     margin: 10px;
     text-align: center;
-    flex: 1 1 20%; /* Allow items to flexibly shrink and grow */
-    max-width: 150px; /* Ensures items don't get too large */
-    min-width: 100px; /* Ensures items have a minimum size */
+    flex: 1 1 20%; /* flexibly shrink and grow */
+    max-width: 150px; 
+    min-width: 100px; 
   }
 
   .col-12 ul {
@@ -533,13 +540,28 @@ text-shadow: none;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
-.proj-imgbx {
+.project .proj-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  z-index: 1; /* Ensure that the image box is on top */
+  z-index: 1;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
 }
+
+.proj-imgbx {
+  display: none;
+}
+
+.project .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #fffccc -5.91%, #b560ff 111.58%);
@@ -548,15 +570,23 @@ text-shadow: none;
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
-  z-index: 0; /* Keep the before element behind everything */
+  z-index: 0; 
 }
 .proj-imgbx:hover::before {
   height: 100%;
 }
+
+.proj-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+
 .proj-txtx {
   position: absolute;
   text-align: center;
-  top: 65%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
@@ -564,7 +594,7 @@ text-shadow: none;
   width: 100%;
   color: rgb(86, 86, 86);
   text-shadow: none;
-  z-index: 2; /* Ensure the text is above the hover effect */
+  z-index: 2; /* text stays above the hover effect */
  
 }
 .proj-imgbx:hover .proj-txtx {
@@ -597,7 +627,7 @@ text-shadow: none;
 /* Ensure the a tag remains clickable */
 a {
   position: relative;
-  z-index: 3; /* Ensure the link stays on top of everything */
+  z-index: 3; /* the link stays on top of everything */
   display: block;
   text-decoration: none;
   color: inherit;
@@ -619,8 +649,8 @@ margin-bottom: 4rem;
   background-color: #c7f3d3;
   border-radius: 64px;
     text-align: center;
-    border-top: 3px solid rgb(183, 155, 255);
-    border-bottom: 3px solid white;
+    border-top: 3px solid #b51eff8c;
+    border-bottom: 3px solid #b51eff8c;
     justify-content: center;
     padding: 2rem;
 
@@ -711,7 +741,7 @@ margin-bottom: 4rem;
 
 .footer {
   padding: 2rem 0 5% 0;
-  background: linear-gradient(90deg, #a8acdb  0%, #ffa0a3 50%,#ff9396 100%);
+  background: linear-gradient(90deg, #ff9a9e 0%, #ffa0a3 50%, #c7f3d3 100%);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -719,6 +749,8 @@ margin-bottom: 4rem;
 
 .footer img.logo {
   padding: 10px;
+
+  max-width: 5rem;
 }
 
 .footer img {
