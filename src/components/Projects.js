@@ -1,9 +1,10 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.jpg";
-import projImg3 from "../assets/img/project-img3.jpg";
-import projImg4 from "../assets/img/project-img4.jpg";
+import projImg1 from "../assets/img/foster4paws.png";
+import projImg2 from "../assets/img/video-game-tracker.png";
+import projImg3 from "../assets/img/Colorama1.png";
+import projImg4 from "../assets/img/Evil-christmas1.png";
+import projImg from "../assets/img/project-img.png"
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -15,13 +16,13 @@ export const Projects = () => {
       title: "Foster4Paws",
       description: "A Pet foster web-app",
       imgUrl: projImg1,
-      url: "https://github.com/fevi-ro/Pet-foster-app?tab=readme-ov-file",
+      url: "https://foster4paws.onrender.com",
     },
     {
       title: "Video Game tracker",
       description: "A web-app for gamers",
       imgUrl: projImg2,
-      url: "https://videogame-tracker.netlify.app/",
+      url: "https://video-game-tracker-lf9h.onrender.com/",
     },
     {
       title: "Colorama",
@@ -32,18 +33,18 @@ export const Projects = () => {
     {
       title: "Evil Christmas Presents",
       description: "A classic point and shoot game",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
       url: "https://evil-christmas-presents.netlify.app",
     },
     {
       title: "More coming soon",
       description: " ",
-      imgUrl: projImg4,
+      imgUrl: projImg,
     },
     {
       title: "More coming soon",
       description: " ",
-      imgUrl: projImg4,
+      imgUrl: projImg,
     },
   ];
 
@@ -56,7 +57,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p></p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                    {/* 
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">

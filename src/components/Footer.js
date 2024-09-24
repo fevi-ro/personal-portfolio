@@ -17,9 +17,9 @@ export const Footer = () => {
        </Col>
        <Col sm={6} className="text-center text-sm-end">
         <div className="social-icon">
-        <a href=""><img src={navIcon1} alt="" /></a>
-        <a href=""><img src={navIcon2} alt="" /></a>
-        <a href=""><img src={navIcon3} alt="" /></a>
+        <a href="https://www.linkedin.com/in/foevaroma/" target="_blank"><img src={navIcon1} alt=""  /></a>
+        <a href="https://www.xing.com/profile/FoteiniEvanthia_Roma" target="_blank"><img src={navIcon2} alt=""  /></a>
+        <a href="https://github.com/fevi-ro" target="_blank"><img src={navIcon3} alt=""  /></a>
         </div>
         <p>Copyright 2024. All rights Reserved</p>
        </Col>
@@ -28,3 +28,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+
