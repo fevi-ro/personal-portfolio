@@ -53,7 +53,7 @@ const tick = () => {
         setIsDeleting(false);
         setLoopNum(loopNum +1 );
         setIndex(1);
-        setDelta(500);
+        setDelta(180);
     } else {
         setIndex(prevIndex => prevIndex + 1);
     }
