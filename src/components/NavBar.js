@@ -49,7 +49,7 @@ const onUpdateActiveLink = (value) => {
             <span className="navbar-text">
 <div className="social-icon">
     <a className="in" href="https://www.linkedin.com/in/foevaroma/" target="_blank"> <img className="in" src={navIcon1} alt="" /></a>
-    <a href="https://www.xing.com/profile/FoteiniEvanthia_Roma" target="_blank"> <img src={navIcon2} alt="" /></a>
+    <a href="https://www.xing.com/profile/FoteiniEvanthia_Roma/web_profiles" target="_blank"> <img src={navIcon2} alt="" /></a>
     <a href="https://github.com/fevi-ro" target="_blank"> <img src={navIcon3} alt="" /></a>
 </div>
 <Nav.Link href="#contact"  onClick={()=> onUpdateActiveLink('contact')}><button><span>Let's Connect</span></button></Nav.Link>
