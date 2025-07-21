@@ -5,7 +5,7 @@ import TrackVisibility from "react-on-screen";
 import { useEffect, useState } from "react"
 import { Nav, Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/plant1.png"
+import headerImg from "../assets/img/bulb2.png"
 
 
 
@@ -80,7 +80,7 @@ return (
 <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={headerImg} alt="Header Img" />
                 </div>}
                 </TrackVisibility>
 
