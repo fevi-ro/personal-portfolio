@@ -345,8 +345,10 @@ text-shadow: none;
 }
 
 
-.banner img {
-  animation: updown 3s linear infinite;
+.banner img
+ {
+    margin-top: 4rem;
+    animation: updown 6s linear infinite;
 }
 
 @keyframes updown {
