@@ -9,7 +9,7 @@ import headerImg from "../assets/img/bulb2.png"
 
 
 
-export const Banner = () => {
+export const Banner = ({toggleTheme}) => {
 
 const [loopNum, setLoopNum] = useState(0);
 const [isDeleting, setIsDeleting] = useState(false);
@@ -80,7 +80,7 @@ return (
 <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img" />
+                  <img src={headerImg} alt="Lightbulb" className="bulb" onClick={toggleTheme} style={{cursor: "pointer"}}/>
                 </div>}
                 </TrackVisibility>
 
